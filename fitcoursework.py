@@ -12,15 +12,15 @@ Original file is located at
 
 #from scapy.all import *
 
-from google.colab import drive
-drive.mount('/content/drive')
+#from google.colab import drive
+#drive.mount('/content/drive')
 
 pcap_file_path = '/content/drive/MyDrive/FIT/Data/link1_1-VPN/link1_Test11_34_54.pcap'
 packets = rdpcap(pcap_file_path)
 
 #!pip install scapy
 
-from scapy.all import rdpcap
+#from scapy.all import rdpcap
 
 pcap_file_path = '/content/drive/MyDrive/FIT/Data/link1_1-VPN/link1_Test11_34_54.pcap'
 packets = rdpcap(pcap_file_path)
@@ -32,7 +32,7 @@ for i in range(min(5, len(packets))):
 # Additional information about the pcap file
 print(f"Total number of packets: {len(packets)}")
 
-from scapy.all import rdpcap, IP, TCP, UDP
+#from scapy.all import rdpcap, IP, TCP, UDP
 def is_vpn(packet):
     # Check if the packet contains specific characteristics associated with VPN traffic
     return (
@@ -56,8 +56,8 @@ print(f"Total packets: {len(packets)}")
 print(f"VPN packets: {len(vpn_packets)}")
 print(f"Non-VPN packets: {len(non_vpn_packets)}")
 
-from scapy.all import rdpcap
-import os
+#from scapy.all import rdpcap
+#import os
 
 def detect_vpn_packets(pcap_file):
     # Common VPN ports (for demonstration purposes)
