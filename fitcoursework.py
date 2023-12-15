@@ -15,7 +15,7 @@ import scapy
 #from google.colab import drive
 #drive.mount('/content/drive')
 from scapy.all import rdpcap
-pcap_file_path = 'Data/link1_1-VPN/link1_Test11_34_54.pcap'
+pcap_file_path = 'Data/link1_Test11_34_54.pcap'
 
 packets = rdpcap(pcap_file_path)
 
@@ -23,7 +23,7 @@ packets = rdpcap(pcap_file_path)
 
 
 
-pcap_file_path = 'Data/link1_1-VPN/link1_Test11_34_54.pcap'
+pcap_file_path = 'Data/link1_Test11_34_54.pcap'
 packets = rdpcap(pcap_file_path)
 
 # Display information about the first few packets
