@@ -23,7 +23,7 @@ packets = rdpcap(pcap_file_path)
 
 
 
-pcap_file_path = '/content/drive/MyDrive/FIT/Data/link1_1-VPN/link1_Test11_34_54.pcap'
+pcap_file_path = '/Data/link1_1-VPN/link1_Test11_34_54.pcap'
 packets = rdpcap(pcap_file_path)
 
 # Display information about the first few packets
