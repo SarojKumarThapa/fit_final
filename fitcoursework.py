@@ -15,7 +15,8 @@ import scapy
 #from google.colab import drive
 #drive.mount('/content/drive')
 from scapy.all import rdpcap
-pcap_file_path = '/content/drive/MyDrive/FIT/Data/link1_1-VPN/link1_Test11_34_54.pcap'
+pcap_file_path = '/Data/link1_1-VPN/link1_Test11_34_54.pcap'
+
 packets = rdpcap(pcap_file_path)
 
 #!pip install scapy
