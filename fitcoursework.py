@@ -7,8 +7,8 @@ Original file is located at
     https://colab.research.google.com/drive/1fpveVL59gGPDPeTr93K99PhtLlw3wAvm
 """
 
-!pip install scapy
-!pip install scapy_http
+#!pip install scapy
+#!pip install scapy_http
 
 from scapy.all import *
 
@@ -18,7 +18,7 @@ drive.mount('/content/drive')
 pcap_file_path = '/content/drive/MyDrive/FIT/Data/link1_1-VPN/link1_Test11_34_54.pcap'
 packets = rdpcap(pcap_file_path)
 
-!pip install scapy
+#!pip install scapy
 
 from scapy.all import rdpcap
 
