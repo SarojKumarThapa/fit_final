@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1fpveVL59gGPDPeTr93K99PhtLlw3wAvm
 """
 import subprocess
-subprocess.run(["sudo", "ip", "-6", "route", "add", "default", "via", "<IPv6_gateway_address>", "dev", "<interface_name>"])
+subprocess.run(["sudo", "ip", "-6", "route", "add", "default", "via", "inet6", "dev", "<interface_name>"])
 
 import scapy
 #!pip install scapy_http
