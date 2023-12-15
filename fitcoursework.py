@@ -10,7 +10,7 @@ Original file is located at
 #!pip install scapy
 #!pip install scapy_http
 
-from scapy.all import *
+#from scapy.all import *
 
 from google.colab import drive
 drive.mount('/content/drive')
