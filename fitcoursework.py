@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1fpveVL59gGPDPeTr93K99PhtLlw3wAvm
 """
 
-#!pip install scapy
+import scapy
 #!pip install scapy_http
 
 #from scapy.all import *
