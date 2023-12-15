@@ -14,13 +14,13 @@ Original file is located at
 
 #from google.colab import drive
 #drive.mount('/content/drive')
-
+from scapy.all import rdpcap
 pcap_file_path = '/content/drive/MyDrive/FIT/Data/link1_1-VPN/link1_Test11_34_54.pcap'
 packets = rdpcap(pcap_file_path)
 
 #!pip install scapy
 
-#from scapy.all import rdpcap
+
 
 pcap_file_path = '/content/drive/MyDrive/FIT/Data/link1_1-VPN/link1_Test11_34_54.pcap'
 packets = rdpcap(pcap_file_path)
