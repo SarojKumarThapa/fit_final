@@ -88,13 +88,13 @@ def detect_vpn_packets(pcap_file):
                     vpn_packet_count += 1
 
     except FileNotFoundError:
-        print(f"File not found: {pcap_file}")
+        print("File not found: {}".format(pcap_file))
         return
     except Exception as e:
-        print(f"An error occurred while processing {pcap_file}: {e}")
+        print("An error occurred while processing {}: {}".format(pcap_file, e))
         return
 
-    print(f"Total packets in {pcap_file}: {total_packet_count}, Suspected VPN packets: {vpn_packet_count}")
+   print("Total packets in {}: {}, Suspected VPN packets: {}".format(pcap_file, total_packet_count, vpn_packet_count))
 
 
 # Define the root folder path
