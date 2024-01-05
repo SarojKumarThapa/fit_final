@@ -63,7 +63,7 @@ print("Non-VPN packets: {}".format(len(non_vpn_packets)))
 
 #from scapy.all import rdpcap
 import os
-pcap_file = []
+
 def detect_vpn_packets(pcap_file):
     # Common VPN ports (for demonstration purposes)
     common_vpn_ports = [1194, 1723, 500, 4500,443,1701]
