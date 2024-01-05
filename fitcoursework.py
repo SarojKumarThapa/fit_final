@@ -107,4 +107,4 @@ for folder_name, sub_folders, file_names in os.walk(root_folder_path):
             # Construct full file path
             file_path = os.path.join(folder_name, filename)
             detect_vpn_packets(file_path)
-            print("Total packets in {}: {}, Suspected VPN packets: {}".format(file_path, total_packet_count, vpn_packet_count))
+        print("Total packets in {}: {}, Suspected VPN packets: {}".format(file_path, total_packet_count, vpn_packet_count))
