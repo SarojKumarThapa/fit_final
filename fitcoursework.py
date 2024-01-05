@@ -94,7 +94,7 @@ def detect_vpn_packets(pcap_file):
         print("An error occurred while processing {}: {}".format(pcap_file, e))
         return
 
- print("Total packets in {}: {}, Suspected VPN packets: {}".format(pcap_file, total_packet_count, vpn_packet_count))
+print("Total packets in {}: {}, Suspected VPN packets: {}".format(pcap_file, total_packet_count, vpn_packet_count))
 
 
 # Define the root folder path
