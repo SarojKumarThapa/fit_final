@@ -30,7 +30,8 @@ packets = rdpcap(pcap_file_path)
 
 # Display information about the first few packets
 for i in range(min(5, len(packets))):
-    print(f"Packet {i + 1}:\n{packets[i].summary()}\n")
+    print("Packet {}:\n{}\n".format(i + 1, packets[i].summary()))
+
 
 # Additional information about the pcap file
 print(f"Total number of packets: {len(packets)}")
