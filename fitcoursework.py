@@ -64,12 +64,15 @@ print("Non-VPN packets: {}".format(len(non_vpn_packets)))
 #from scapy.all import rdpcap
 import os
 
+vpn_packet_count = 0
+total_packet_count = 0
+
 def detect_vpn_packets(pcap_file):
     # Common VPN ports (for demonstration purposes)
     common_vpn_ports = [1194, 1723, 500, 4500,443,1701]
 
-    vpn_packet_count = 0
-    total_packet_count = 0
+    # vpn_packet_count = 0
+    # total_packet_count = 0
 
     try:
         packets = rdpcap(pcap_file)
