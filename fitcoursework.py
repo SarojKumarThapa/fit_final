@@ -64,15 +64,12 @@ print("Non-VPN packets: {}".format(len(non_vpn_packets)))
 #from scapy.all import rdpcap
 import os
 
-vpn_packet_count = 0
-total_packet_count = 0
-
 def detect_vpn_packets(pcap_file):
     # Common VPN ports (for demonstration purposes)
     common_vpn_ports = [1194, 1723, 500, 4500,443,1701]
 
-    # vpn_packet_count = 0
-    # total_packet_count = 0
+    vpn_packet_count = 0
+    total_packet_count = 0
 
     try:
         packets = rdpcap(pcap_file)
@@ -110,5 +107,4 @@ for folder_name, sub_folders, file_names in os.walk(root_folder_path):
             # Construct full file path
             file_path = os.path.join(folder_name, filename)
             detect_vpn_packets(file_path)
-
-print("Total packets in {}: {}, Suspected VPN packets: {}".format(file_path, total_packet_count, vpn_packet_count))
+            print("Total packets in {}: {}, Suspected VPN packets: {}".format(file_path, total_packet_count, vpn_packet_count))
