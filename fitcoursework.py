@@ -34,7 +34,7 @@ for i in range(min(5, len(packets))):
 
 
 # Additional information about the pcap file
-print(f"Total number of packets: {len(packets)}")
+print("Total number of packets: {}".format(len(packets)))
 
 #from scapy.all import rdpcap, IP, TCP, UDP
 def is_vpn(packet):
