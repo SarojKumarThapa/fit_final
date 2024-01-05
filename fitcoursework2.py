@@ -10,7 +10,7 @@ import os
 import subprocess
 import scapy
 
-os.system("sudo ip -6 route add default via inet6")
+subprocess.call(["sudo", "ip", "-6", "route", "add", "default", "via", "inet6"])
 
 import scapy
 from scapy.all import rdpcap
