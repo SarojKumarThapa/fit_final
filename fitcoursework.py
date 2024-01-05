@@ -56,9 +56,10 @@ vpn_packets = [packet for packet in packets if is_vpn(packet)]
 non_vpn_packets = [packet for packet in packets if not is_vpn(packet)]
 
 # Print basic statistics
-print(f"Total packets: {len(packets)}")
-print(f"VPN packets: {len(vpn_packets)}")
-print(f"Non-VPN packets: {len(non_vpn_packets)}")
+print("Total packets: {}".format(len(packets)))
+print("VPN packets: {}".format(len(vpn_packets)))
+print("Non-VPN packets: {}".format(len(non_vpn_packets)))
+
 
 #from scapy.all import rdpcap
 #import os
