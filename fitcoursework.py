@@ -48,7 +48,7 @@ def is_vpn(packet):
     )
 
 # Load the pcap file
-pcap_file_path = '/content/drive/MyDrive/FIT/Data/link1_1-VPN/link1_Test11_37_33.pcap'
+pcap_file_path = 'Data/link1_1-VPN/link1_Test11_34_54.pcap'
 packets = rdpcap(pcap_file_path)
 
 # Classify packets into VPN and non-VPN
@@ -98,7 +98,7 @@ print("Total packets in {}: {}, Suspected VPN packets: {}".format(pcap_file, tot
 
 
 # Define the root folder path
-root_folder_path = '/content/drive/MyDrive/FIT/Data/'
+root_folder_path = 'Data/'
 
 # Walk through each folder and subfolder in the directory
 for folder_name, sub_folders, file_names in os.walk(root_folder_path):
